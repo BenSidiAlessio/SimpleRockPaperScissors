@@ -8,7 +8,7 @@ print("Rock Paper Scissors\n")
 
 
 while True:
-    isInputNotRight: True
+    isInputNotRight = True
 
     while isInputNotRight == True:
         playerMove = input("Enter Your Move:\n r for ROCK \n p for PAPER \n s for SCISSORS \n q for QUIT \n")
@@ -16,11 +16,11 @@ while True:
             print("thanks for playing...")
             sys.exit()
         elif playerMove != 'r' and playerMove != 'p' and playerMove != 's':
-            print("Wrong input, try again! press r, p , s or q")
+            print("\nWrong input, try again! press r, p , s or q\n\n")
         else:
             isInputNotRight = False
 
-    print("scelta esatta")
+
 
 
 
