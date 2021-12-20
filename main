@@ -1,2 +1,26 @@
-print("hello world")
+import random , sys
+#variables for taking player's score count
+win = 0
+lose = 0
+tie = 0
+
+print("Rock Paper Scissors\n")
+
+
+while True:
+    isInputNotRight: True
+
+    while isInputNotRight == True:
+        playerMove = input("Enter Your Move:\n r for ROCK \n p for PAPER \n s for SCISSORS \n q for QUIT \n")
+        if playerMove == 'q':
+            print("thanks for playing...")
+            sys.exit()
+        elif playerMove != 'r' and playerMove != 'p' and playerMove != 's':
+            print("Wrong input, try again! press r, p , s or q")
+        else:
+            isInputNotRight = False
+
+    print("scelta esatta")
+
+
 
